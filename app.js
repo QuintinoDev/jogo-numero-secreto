@@ -9,7 +9,7 @@ function exibirTextoNaTela(tag, Text){
 
 function exibirMensagemInicial(){
     exibirTextoNaTela('h1', 'Jogo da vida');
-    exibirTextoNaTela('p', 'Digite um numero de 1 a 10');
+    exibirTextoNaTela('p', 'Digite um numero de 1 a 100');
 }
 
 exibirMensagemInicial();
@@ -33,7 +33,7 @@ function verificarChute(){
 }
 
 function gerarNumeroAleatorio() {
-    let numeroEscolhido = parseInt(Math.random() *10 + 1);
+    let numeroEscolhido = parseInt(Math.random() *100 + 1);
     if(listaDeNumerosSorteados.includes(numeroEscolhido)){
         return gerarNumeroAleatorio();
     }else{
